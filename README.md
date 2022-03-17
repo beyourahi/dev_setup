@@ -1,5 +1,3 @@
-# Dev Environment Setup
-
 # Linux (Debian)
 
 1. Install package `add-apt-repository`
@@ -129,26 +127,25 @@
     alias python "/usr/local/bin/python<version>"
     ```
     
+12. Install `neovim`
 
-6. Install `neovim`
+    ```bash
+    # Install build pre-requisites
+    sudo apt install -y gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
 
-```bash
-# Install build pre-requisites
-sudo apt install -y gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
+    # Build neovim
+    gh repo clone neovim/neovim && cd neovim && make && sudo make install
+    rm -rf neovim
+    ```
 
-# Build neovim
-gh repo clone neovim/neovim && cd neovim && make && sudo make install
-rm -rf neovim
-```
+13. Install `astro vim`
 
-6. Install `astro vim`
+    ```bash
+    git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
+    nvim +PackerSync
+    ```
 
-```bash
-git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
-nvim +PackerSync
-```
-
-1. Install `Visual Studio Code`
+14. Install `Visual Studio Code`
     
     ```bash
     # Download .deb package
