@@ -1,10 +1,8 @@
 # Linux / WSL (Debian based)
-
+ 
 <br>
 
-- Install `Meslo Nerd Font`: [https://github.com/ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
-- Download `Python`source: [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)
-- **[OPTIONAL]** Download `Visual Studio Code` .deb package: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
+### Install `Meslo Nerd Font (Meslo LGM)`: [https://github.com/ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 <br>
 
@@ -16,8 +14,14 @@
     
 2. Install `fish shell`
     
+   Download .deb package: https://software.opensuse.org/download.html?project=shells%3Afish&package=fish
+    
     ```bash
-    sudo apt-add-repository ppa:fish-shell/release-3 -y && sudo apt update && sudo apt install -y fish && chsh -s $(which fish)
+    # Install fish
+    sudo dpkg -i <package_name>.deb
+
+    # change default shell to fish
+    chsh -s $(which fish)
     
     # if error starting up fish shell, add fish path to /etc/shells then change the shell to fish
     ```
@@ -31,8 +35,10 @@
     ```
     
 4. Update `python`
-    
-    ```bash
+   
+   Download source: [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)
+   
+   ```bash
     # Extract to home directory and Install Python
     tar xvf Python-<version_number>.tgz && cd Python-<version_number> && ./configure --enable-optimizations --with-ensurepip=install && sudo make -j 8 && sudo make altinstall && cd .. && sudo rm -rf Python-<version_number>.tgz Python-<version_number>
     
@@ -41,6 +47,9 @@
     ```
     
 5. **[OPTIONAL]** Install `Visual Studio Code`
+
+    Download .deb package: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
+
     
     ```bash
     # Install package
