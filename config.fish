@@ -15,7 +15,7 @@ alias gc "git commit"
 alias gp "git push"
 alias gpl "git pull"
 alias rm "rm -rf"
-alias python "/usr/local/bin/python3.10"
+# alias python "/usr/local/bin/python3.10"
 
 # prompt theme
 oh-my-posh prompt init fish --config '~/.poshthemes/takuya.omp.json' | source
