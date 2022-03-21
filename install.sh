@@ -72,6 +72,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3
 
+# Setup fish config
+sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
+
 # Install AstroVim
 gh repo clone kabinspace/AstroVim ~/.config/nvim
 nvim +PackerSync
