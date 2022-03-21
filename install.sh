@@ -10,6 +10,7 @@ echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_11/ /' |
 curl -fsSL https://download.opensuse.org/repositories/shells:fish/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish.gpg > /dev/null
 sudo apt update
 sudo apt install -y fish
+chsh -s /usr/bin/fish
 
 # Update git
 sudo add-apt-repository ppa:git-core/ppa -y
@@ -24,7 +25,7 @@ sudo apt install -y gh
 
 # Install exa
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-gh repo clone ogham/exa ~/exa
+git clone https://github.com/ogham/exa.git ~/exa
 cd ~/exa
 cargo build --release
 cd ~/
@@ -40,8 +41,11 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.json
 rm ~/.poshthemes/themes.zip
 
+# Setup fish config
+sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
+
 # Install neovim
-gh repo clone neovim/neovim ~/neovim
+git clone https://github.com/neovim/neovim.git ~/neovim
 cd ~/neovim
 make
 sudo make install -y
@@ -75,11 +79,8 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3
 
-# Setup fish config
-sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
-
 # Install AstroVim
-gh repo clone kabinspace/AstroVim ~/.config/nvim
+git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
 nvim +PackerSync
 
 # Authenticate with a GitHub host
