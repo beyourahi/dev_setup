@@ -7,7 +7,7 @@
 <br />
 
 ### Step 2: Install `gh cli` and 🐟 `fish shell`:
-    curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh && gh auth login && echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_11/ /' | sudo tee /etc/apt/sources.list.d/shells:fish.list && curl -fsSL https://download.opensuse.org/repositories/shells:fish/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish.gpg > /dev/null && sudo apt update && sudo apt install -y fish && chsh -s /usr/bin/fish && exit
+    sudo apt update && sudo apt upgrade -y && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh && gh auth login && echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_11/ /' | sudo tee /etc/apt/sources.list.d/shells:fish.list && curl -fsSL https://download.opensuse.org/repositories/shells:fish/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish.gpg > /dev/null && sudo apt update && sudo apt install -y fish && chsh -s /usr/bin/fish && exit
 
 <br />
 
