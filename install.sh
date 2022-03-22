@@ -17,12 +17,6 @@ sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt update
 sudo apt install -y git
 
-# Install gh cli
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo apt update
-sudo apt install -y gh
-
 # Install exa
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://github.com/ogham/exa.git ~/exa
@@ -83,6 +77,3 @@ sudo apt install -y python3
 # Install AstroVim
 git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
 nvim +PackerSync
-
-# Authenticate with a GitHub host
-gh auth login
