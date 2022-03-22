@@ -11,8 +11,8 @@
 
 <br />
 
-### Step 3: : 🦈 Install `fisher`
-    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+### Step 3: : 🦈 Install `fisher` and essential plugins:
+    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list
 
 <br />
 
