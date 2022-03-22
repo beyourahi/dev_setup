@@ -4,6 +4,9 @@ set fish_greeting ""
 # to enable ANSI color codes
 set -gx TERM xterm-256color
 
+# set default editor to Neovim
+set -gx EDITOR nvim
+
 # aliases (life saver)
 alias c "clear"
 alias l "exa -l -a --icons"
@@ -19,4 +22,3 @@ alias python "/usr/local/bin/python3.10"
 
 # prompt theme
 oh-my-posh prompt init fish --config '~/.poshthemes/takuya.omp.json' | source
-
