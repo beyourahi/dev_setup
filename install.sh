@@ -46,8 +46,9 @@ rm -rf ~/neovim
 # Install node (current/latest)
 sudo apt remove --purge nodejs -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-curl -sL https://git.io/fisher | source
-fisher install jorgebucaran/fisher FabioAntunes/fish-nvm edc/bass jethrokuan/z
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z
 nvm install node
 
 # Update yarn
@@ -65,6 +66,3 @@ sudo apt install -y python3
 # Install AstroVim
 git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
 nvim +PackerSync
-
-# Setup fish config
-sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
