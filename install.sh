@@ -43,12 +43,13 @@ rm ~/.poshthemes/themes.zip
 
 # Setup fish config
 sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
+. ~/.config/fish/config.fish
 
 # Install neovim
 git clone https://github.com/neovim/neovim.git ~/neovim
 cd ~/neovim
 make
-sudo make install -y
+sudo make install
 cd ~/
 rm -rf ~/neovim
 
