@@ -6,8 +6,8 @@
 
 <br />
 
-### Step 2: 💩 Install `fisher` and `gh cli`:
-    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh && gh auth login
+### Step 2: 💩 Install `gh cli`:
+    curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh && gh auth login
 
 <br />
 
@@ -16,5 +16,15 @@
 
 <br />
 
-### Step 4: 🐟 Setup fish config:
+### Step 4: 💩 Install `fisher`:
+    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+<br />
+
+### Step 5: 🔥 Hit this other badboi:
+    cd ~/dev_setup && chmod +x install2.sh && ./install2.sh
+
+<br />
+
+### Step 6: 🐟 Setup fish config:
     sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
