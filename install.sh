@@ -66,3 +66,6 @@ sudo apt install -y python3
 # Install AstroVim
 git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
 nvim +PackerSync
+
+# Exit the terminal
+exit
