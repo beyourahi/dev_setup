@@ -16,6 +16,7 @@ set -gx PATH ~/.nvm/versions/node/v17.7.2/bin $PATH
 set -gx PATH node_modules/.bin $PATH
 
 # aliases (life saver)
+alias y "yarn"
 alias c "clear"
 alias r "ranger"
 alias l "exa -l -a --icons"
