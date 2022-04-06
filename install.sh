@@ -60,8 +60,15 @@ curl -qL https://www.npmjs.com/install.sh | sh
 corepack enable
 yarn set version stable
 
+# Install Vercel CLI globally
+npm i -g vercel
+
 # Setup fish config
 sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
+
+# Setup Min browser userscripts
+sudo cp -r ~/dev_setup/dark-mode.js ~/.config/Min/userscripts/
+sudo cp -r ~/dev_setup/json-viewer.js ~/.config/Min/userscripts/
 
 # Exit the terminal
 exit
