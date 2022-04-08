@@ -44,10 +44,6 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3
 
-# Install AstroVim
-git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
-nvim +PackerSync
-
 # Install node (current/latest)
 sudo apt remove --purge nodejs -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
