@@ -33,3 +33,9 @@
 ### Step 4:  🔥 Hit this badboi:
     
     git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh
+    
+<br />
+
+### Step 5:  🖥️ Install LunarVim:
+    
+    bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
