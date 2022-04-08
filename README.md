@@ -12,7 +12,7 @@
 
 ## Vim setup:
 - [Neovim](https://github.com/neovim/neovim) - Vim on steroids
-    - [AstroVim](https://github.com/kabinspace/AstroVim) - Cool Neovim config
+    - [LunarVim](https://github.com/LunarVim/LunarVim) - Cool Neovim config
 
 <br />
 
