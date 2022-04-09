@@ -43,6 +43,7 @@ sudo apt install -y code
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install -y python3
+sudo apt install -y pip
 
 # Install node (current/latest)
 sudo apt remove --purge nodejs -y
