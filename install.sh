@@ -3,7 +3,7 @@
 # Update system and Install prerequisite packages
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y software-properties-common cargo make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip doxygen bc module-assistant dkms neofetch htop ranger
+sudo apt install -y software-properties-common cargo make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip doxygen bc module-assistant dkms neofetch htop ranger fzf fontconfig
 
 # Update git
 sudo add-apt-repository ppa:git-core/ppa -y
@@ -63,9 +63,13 @@ npm i -g vercel
 # Setup fish config
 sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
 
-# Setup Min browser userscripts
-sudo cp -r ~/dev_setup/dark-mode.js ~/.config/Min/userscripts/
-sudo cp -r ~/dev_setup/json-viewer.js ~/.config/Min/userscripts/
+# Install getnf - A better way to install NerdFonts
+git clone https://github.com/ronniedroid/getnf.git ~/getnf
+cd ~/getnf
+./install.sh
+cd ~
+rm -rf ~/getnf
+getnf
 
 # Exit the terminal
 exit
