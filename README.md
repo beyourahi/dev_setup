@@ -39,3 +39,9 @@
 ### Step 5:  🖥️ Install LunarVim:
     
     bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
+
+<br />
+
+### Step 6:  📜 Setup Min browser userscripts:
+    
+    sudo cp -r ~/dev_setup/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/json-viewer.js ~/.config/Min/userscripts/
