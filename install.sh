@@ -70,6 +70,7 @@ cd ~/getnf
 cd ~
 rm -rf ~/getnf
 getnf
+fc-cache -f -v
 
 # Exit the terminal
 exit
