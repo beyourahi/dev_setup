@@ -10,7 +10,7 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/.nvm/versions/node/v17.7.2/bin $PATH
+set -gx PATH ~/.nvm/versions/node/v17.8.0/bin $PATH
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
@@ -26,6 +26,8 @@ alias v "lvim"
 alias g "git"
 alias gt "git status"
 alias ga "git add ."
+alias gc "git commit -am"
+alias gam "git commit --amend -m"
 alias gp "git push"
 alias gpl "git pull"
 alias rm "rm -rf"
