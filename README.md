@@ -11,8 +11,7 @@
 - [Exa](https://github.com/ogham/exa) - ls replacement
 
 ## Vim setup:
-- [Neovim](https://github.com/neovim/neovim) - Vim on steroids
-    - [LunarVim](https://github.com/LunarVim/LunarVim) - Cool Neovim config
+- [LunarVim](https://github.com/LunarVim/LunarVim) - Cool [Neovim](https://github.com/neovim/neovim) config
 
 <br />
 
