@@ -10,12 +10,12 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-set -gx PATH ~/.nvm/versions/node/v17.8.0/bin $PATH
-
-# NodeJS
+set -gx PATH /usr/local/go/bin $PATH
+set -gx PATH ~/.nvm/versions/node/v17.9.0/bin $PATH
 set -gx PATH node_modules/.bin $PATH
 
 # aliases (life saver)
+alias cj "caja"
 alias e "exit"
 alias t "touch"
 alias y "yarn"
@@ -30,6 +30,7 @@ alias gc "git commit -am"
 alias gam "git commit --amend -m"
 alias gp "git push"
 alias gpl "git pull"
+alias gl "git log --oneline"
 alias rm "rm -rf"
 alias python "/usr/local/bin/python3.10"
 
