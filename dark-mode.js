@@ -15,7 +15,13 @@
 // @exclude beta.reactjs.org
 // @exclude developer.mozilla.org
 // @exclude nextjs.org
+// @exclude torrentbd.com
+// @exclude helix-editor.com
+// @exclude lunarvim.org
+// @exclude sw.kovidgoyal.net
 // @exclude tailwindcss.com
+// @exclude twitter.com
+// @exclude 172.22.22.101
 // ==/UserScript==
 
 var style = document.createElement('style')
