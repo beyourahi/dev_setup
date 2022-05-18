@@ -11,6 +11,7 @@ sudo apt update
 sudo apt install -y git
 
 # Install exa
+sudo apt remove rustc
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://github.com/ogham/exa.git ~/exa
 cd ~/exa
