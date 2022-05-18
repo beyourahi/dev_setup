@@ -62,7 +62,7 @@ bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/i
 ### Step 6: 📜 Setup `fish` and `lunarvim` config files
 
 ```bash
-sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/ && . ~/.config/fish/config.fish
+sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/ && . ~/.config/fish/config.fish && sudo rm -rf ~/dev_setup
 ```
 
 <br />
