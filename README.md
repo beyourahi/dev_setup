@@ -25,12 +25,10 @@ sudo apt update && sudo apt upgrade
 
 <br />
 
-### Step 2: 🔽 Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
-
-#### set fish as default shell and authenticate with GitHub
+### Step 2: 🔽 Install [gh cli](https://github.com/cli/cli/releases) and 🐟 fish shell
 
 ```bash
-chsh -s /usr/bin/fish && gh auth login && exit
+git clone https://github.com/fish-shell/fish-shell.git ~/fish-shell && cd fish-shell && cmake . && make && sudo make install && chsh -s /usr/bin/fish && gh auth login && exit
 ```
 
 <br />
