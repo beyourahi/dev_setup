@@ -62,9 +62,6 @@ yarn set version stable
 # Install Vercel CLI globally
 npm i -g vercel
 
-# Re-install fish shell
-git clone https://github.com/fish-shell/fish-shell.git ~/fish-shell && cd fish-shell && cmake . && make && sudo make install && chsh -s /usr/bin/fish
-
 # Install getnf - A better way to install NerdFonts
 git clone https://github.com/ronniedroid/getnf.git ~/getnf
 cd ~/getnf
