@@ -43,7 +43,7 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 
 <br />
 
-### Step 4: 🔥 Hit this badboi
+### Step 4: 🔥 Run install script and setup `fish` config files
 
 ```bash
  git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh && sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && . ~/.config/fish/config.fish && exit
