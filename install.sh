@@ -52,6 +52,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install --lts
 curl -qL https://www.npmjs.com/install.sh | sh
 
+# Install pnpm
+npm i -g pnpm
+
 # Update yarn
 corepack enable
 yarn set version stable
