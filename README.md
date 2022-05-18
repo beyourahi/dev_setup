@@ -17,7 +17,7 @@
 
 <br />
 
-### Step 1: Update system
+### Step 1: 🚀 Update system
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -25,7 +25,7 @@ sudo apt update && sudo apt upgrade -y
 
 <br />
 
-### Step 2: Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
+### Step 2: 🔽 Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
 
 #### set fish as default shell
 
@@ -51,7 +51,7 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 
 <br />
 
-### Step 5: 🔥 Install Lunar Vim
+### Step 5: 🖥️ Install Lunar Vim
 
 ```bash
 bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
@@ -59,7 +59,7 @@ bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/i
 
 <br />
 
-### Step 6: 🔥 Setup `fish` and `lunarvim` config
+### Step 6: 📜 Setup `fish` and `lunarvim` config files
 
 ```bash
 sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/
