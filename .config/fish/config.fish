@@ -13,6 +13,7 @@ set -gx PATH ~/.local/bin $PATH
 set -gx PATH /usr/local/go/bin $PATH
 set -gx PATH ~/.nvm/versions/node/v17.9.0/bin $PATH
 set -gx PATH node_modules/.bin $PATH
+set -gx PATH ~/.cargo/bin $PATH
 
 # aliases (life saver)
 alias cj "caja"
