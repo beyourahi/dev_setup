@@ -2,7 +2,7 @@
 
 # Update system and Install prerequisite packages
 sudo apt update
-sudo apt upgrade -y
+sudo apt upgrade
 sudo apt install -y software-properties-common cargo make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip doxygen bc module-assistant dkms neofetch htop ranger fzf fontconfig
 
 # Update git
@@ -66,11 +66,3 @@ rm -rf ~/getnf
 getnf
 fc-cache -f -v
 
-# Install Lunar Vim
-bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
-
-# Setup fish config
-sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/
-
-# Setup lunarvim config
-sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/

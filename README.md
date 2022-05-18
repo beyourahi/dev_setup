@@ -51,7 +51,23 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 
 <br />
 
-### Step 5: 📜 Setup Min browser userscripts
+### Step 5: 🔥 Install Lunar Vim
+
+```bash
+bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
+```
+
+<br />
+
+### Step 6: 🔥 Setup `fish` and `lunarvim` config
+
+```bash
+sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/
+```
+
+<br />
+
+### Step 7: 📜 Setup Min browser userscripts
 
 ```bash
  sudo cp -r ~/dev_setup/.config/Min/userscripts/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/.config/Min/userscripts/json-viewer.js ~/.config/Min/userscripts/
