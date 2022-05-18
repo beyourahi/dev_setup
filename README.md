@@ -23,22 +23,36 @@
 sudo apt update && sudo apt upgrade -y
 ```
 
+<br />
+
 ### Step 2: Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
+
+#### set fish as default shell
+
+```bash
+chsh -s /usr/bin/fish && exit
+```
 
 <br />
 
 ### Step 3 : 🦈 Install `fisher` and essential plugins
 
-    curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list
+```bash
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list
+```
 
 <br />
 
 ### Step 4: 🔥 Hit this badboi
 
-    git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh
+```bash
+ git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh
+```
 
 <br />
 
 ### Step 5: 📜 Setup Min browser userscripts
 
-    sudo cp -r ~/dev_setup/.config/Min/userscripts/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/.config/Min/userscripts/json-viewer.js ~/.config/Min/userscripts/
+```bash
+ sudo cp -r ~/dev_setup/.config/Min/userscripts/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/.config/Min/userscripts/json-viewer.js ~/.config/Min/userscripts/
+```
