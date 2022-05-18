@@ -35,10 +35,10 @@ chsh -s /usr/bin/fish && gh auth login && exit
 
 <br />
 
-### Step 3 : 🦈 Install `fisher` and essential plugins
+### Step 3 : 🦈 Install `fisher`. essential plugins and setup `fish` config files
 
 ```bash
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list && sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && . ~/.config/fish/config.fish
 ```
 
 <br />
@@ -46,7 +46,7 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 ### Step 4: 🔥 Hit this badboi
 
 ```bash
- git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh
+ git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh && exit
 ```
 
 <br />
@@ -54,21 +54,13 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 ### Step 5: 🖥️ Install Lunar Vim
 
 ```bash
-bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
+bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub) && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/
 ```
 
 <br />
 
-### Step 6: 📜 Setup `fish` and `lunarvim` config files
+### Step 6: 📜 Setup Min browser userscripts
 
 ```bash
-sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/ && . ~/.config/fish/config.fish && sudo rm -rf ~/dev_setup
-```
-
-<br />
-
-### Step 7: 📜 Setup Min browser userscripts
-
-```bash
- sudo cp -r ~/dev_setup/.config/Min/userscripts/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/.config/Min/userscripts/json-viewer.js ~/.config/Min/userscripts/
+ sudo cp -r ~/dev_setup/.config/Min/userscripts/dark-mode.js ~/.config/Min/userscripts/ && sudo cp -r ~/dev_setup/.config/Min/userscripts/json-viewer.js ~/.config/Min/userscripts/ && sudo rm -rf ~/dev_setup
 ```
