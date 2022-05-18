@@ -13,6 +13,7 @@ sudo apt install -y git
 # Install exa
 sudo apt remove rustc
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.cargo/env
 git clone https://github.com/ogham/exa.git ~/exa
 cd ~/exa
 cargo build --release
