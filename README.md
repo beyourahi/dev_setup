@@ -35,10 +35,10 @@ chsh -s /usr/bin/fish && gh auth login && exit
 
 <br />
 
-### Step 3 : 🦈 Install `fisher`. essential plugins and setup `fish` config files
+### Step 3 : 🦈 Install `fisher` and essential plugins
 
 ```bash
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list && sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && . ~/.config/fish/config.fish
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher install FabioAntunes/fish-nvm edc/bass jethrokuan/z && fisher update && fisher list
 ```
 
 <br />
@@ -46,7 +46,7 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 ### Step 4: 🔥 Hit this badboi
 
 ```bash
- git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh && exit
+ git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh && sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && . ~/.config/fish/config.fish && exit
 ```
 
 <br />
