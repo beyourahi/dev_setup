@@ -36,9 +36,6 @@ sudo make install
 cd ~/
 rm -rf ~/neovim
 
-# Install VS Code
-sudo apt install -y code
-
 # Install Python (latest)
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
@@ -60,9 +57,6 @@ yarn set version stable
 # Install Vercel CLI globally
 npm i -g vercel
 
-# Setup fish config
-sudo cp -r ~/dev_setup/config.fish ~/.config/fish/
-
 # Install getnf - A better way to install NerdFonts
 git clone https://github.com/ronniedroid/getnf.git ~/getnf
 cd ~/getnf
@@ -72,5 +66,11 @@ rm -rf ~/getnf
 getnf
 fc-cache -f -v
 
-# Exit the terminal
-exit
+# Install Lunar Vim
+bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub)
+
+# Setup fish config
+sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/
+
+# Setup lunarvim config
+sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/
