@@ -59,6 +59,9 @@ npm i -g pnpm
 corepack enable
 yarn set version stable
 
+# Install NCU
+npm i -g npm-check-updates
+
 # Install Vercel CLI globally
 npm i -g vercel
 
