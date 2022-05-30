@@ -27,7 +27,9 @@ sudo apt update && sudo apt upgrade
 
 ### Step 2: 🔽 Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
 
-#### set fish as default shell and authenticate github
+#### - add `/usr/bin/fish` to file `/etc/shells`
+
+#### - set fish as default shell and authenticate github
 
 ```bash
 chsh -s /usr/bin/fish && gh auth login && exit
