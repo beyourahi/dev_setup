@@ -6,14 +6,9 @@
 
 -   [Fish Shell](https://github.com/fish-shell/fish-shell)
 -   [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
--   [Oh My Posh](https://ohmyposh.dev/) - prompt theme engine
 -   [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Meslo LGM
 -   [z for fish](https://github.com/jethrokuan/z) - Directory jumping
 -   [Exa](https://github.com/ogham/exa) - ls replacement
-
-## Vim setup
-
--   [LunarVim](https://github.com/LunarVim/LunarVim) - Cool [Neovim](https://github.com/neovim/neovim) config
 
 <br />
 
@@ -49,12 +44,4 @@ curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher &&
 
 ```bash
  git clone https://github.com/beyourahi/dev_setup.git ~/dev_setup && cd ~/dev_setup && chmod +x install.sh && ./install.sh && sudo cp -r ~/dev_setup/.config/fish/config.fish ~/.config/fish/ && . ~/.config/fish/config.fish && exit
-```
-
-<br />
-
-### Step 5: 🖥️ Install Lunar Vim
-
-```bash
-bash (curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh | psub) && sudo cp -r ~/dev_setup/.config/lvim/config.lua ~/.config/lvim/
 ```
