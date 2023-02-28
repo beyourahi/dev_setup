@@ -30,8 +30,7 @@ npm i -g npm-check-updates vercel
 git clone https://github.com/ronniedroid/getnf.git ~/getnf
 cd ~/getnf
 ./install.sh
+./getnf
+fc-cache -f -v
 cd ~
 rm -rf ~/getnf
-getnf
-fc-cache -f -v
-
