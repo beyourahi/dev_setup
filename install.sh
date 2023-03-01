@@ -9,15 +9,15 @@ sudo apt remove --purge rustc nodejs -y
 # Install Oh My Fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
-# Install NVM
+# Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 omf install nvm
 
 # Install Node.js LTS
 nvm install --lts
 
-# Install NCU & Vercel CLI
-npm i -g npm-check-updates vercel
+# Install ncu, pnpm and typescript
+npm i -g npm-check-updates pnpm typescript
 
 # Install getnf - A better way to install NerdFonts
 git clone https://github.com/ronniedroid/getnf.git ~/getnf
