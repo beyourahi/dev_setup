@@ -20,7 +20,7 @@ sudo apt update && sudo apt upgrade -y
 
 <br />
 
-### Step 2: 🔽 Install [GitHub CLI](https://github.com/cli/cli/releases) and [VS Code](https://code.visualstudio.com/)
+### Step 2: 🔽 Install [GitHub CLI](https://github.com/cli/cli/releases), [Fish Shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish) and [VS Code](https://code.visualstudio.com/)
 
 #### - set fish as default shell, authenticate github and reboot computer
 
