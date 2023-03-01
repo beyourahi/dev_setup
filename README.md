@@ -15,19 +15,17 @@
 ### Step 1: 🚀 Update system
 
 ```bash
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 ```
 
 <br />
 
-### Step 2: 🔽 Install [gh cli](https://github.com/cli/cli/releases) and 🐟 [fish shell](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A3&package=fish)
+### Step 2: 🔽 Install [GitHub CLI](https://github.com/cli/cli/releases) and [VS Code](https://code.visualstudio.com/)
 
-#### - add `/usr/bin/fish` to file `/etc/shells`
-
-#### - set fish as default shell and authenticate github
+#### - set fish as default shell, authenticate github and reboot computer
 
 ```bash
-chsh -s /usr/bin/fish && gh auth login && exit
+chsh -s /usr/bin/fish && gh auth login && reboot
 ```
 
 <br />
