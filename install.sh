@@ -2,19 +2,9 @@
 
 # Update system and Install prerequisite packages
 sudo apt update
-sudo apt upgrade
-sudo apt install -y git software-properties-common cargo make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip doxygen bc module-assistant dkms neofetch htop fzf fontconfig
+sudo apt upgrade -y
+sudo apt install -y git exa software-properties-common cargo make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev gcc ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip doxygen bc module-assistant dkms neofetch htop fzf fontconfig
 sudo apt remove --purge rustc nodejs -y
-
-# Install exa
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source ~/.cargo/env
-git clone https://github.com/ogham/exa.git ~/exa
-cd ~/exa
-cargo build --release
-cd ~/
-sudo cp -r ~/exa/target/release/exa /usr/local/bin/
-rm -rf ~/exa
 
 # Install node (current/latest)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
