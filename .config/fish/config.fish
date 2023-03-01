@@ -16,6 +16,8 @@ set -gx PATH node_modules/.bin $PATH
 set -gx PATH ~/.cargo/bin $PATH
 
 # aliases (life saver)
+
+# basic
 alias e "exit"
 alias t "touch"
 alias rm "rm -rf"
@@ -23,10 +25,23 @@ alias c "clear"
 alias r "ranger"
 alias l "exa -l -a --icons"
 
+# npm
 alias n "npm"
 alias ni "npm install"
+alias nid "npm install -D"
 alias nd "npm run dev"
+alias nb "npm run build"
 
+# pnpm
+alias p "pnpm"
+alias pa "pnpm add"
+alias pad "pnpm add -D"
+alias pu "pnpm up"
+alias pr "pnpm rm"
+alias pd "pnpm run dev"
+alias pb "pnpm run build"
+
+# git
 alias g "git"
 alias gs "git status"
 alias gl "git log --oneline"
