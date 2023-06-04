@@ -5,7 +5,6 @@ alias e="exit"
 alias t="touch"
 alias rm="rm -rf"
 alias c="clear"
-alias r="ranger"
 alias l="ls -la"
 
 # npm
