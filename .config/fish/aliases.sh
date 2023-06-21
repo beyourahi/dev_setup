@@ -8,22 +8,20 @@ alias c="clear"
 alias l="ls -la"
 
 # npm
-alias n="npm"
 alias ni="npm install"
 alias nid="npm install -D"
-alias nd="npm run dev"
-alias nb="npm run build"
-alias nu="ncu && ncu -u && npm install"
+alias nd="npx prettier --write . && npm run dev"
+alias nb="npx prettier --write . && npm run build"
+alias nu="ncu && ncu -u && npm install && npx prettier --write ."
 
 # pnpm
-alias p="pnpm"
 alias pa="pnpm add"
 alias pad="pnpm add -D"
 alias pi="pnpm install"
 alias pr="pnpm remove"
-alias pd="pnpm run dev"
-alias pb="pnpm run build"
-alias pu="pnpm up --latest && pnpm install"
+alias pd="npx prettier --write . && pnpm run dev"
+alias pb="npx prettier --write . && pnpm run build"
+alias pu="pnpm up --latest && pnpm install && npx prettier --write ."
 
 # git
 alias g="git"
