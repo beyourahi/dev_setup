@@ -14,15 +14,6 @@ alias nd="npx prettier --write . && npm run dev"
 alias nb="npx prettier --write . && npm run build"
 alias nu="ncu && ncu -u && npm install && npx prettier --write ."
 
-# pnpm
-alias pa="pnpm add"
-alias pad="pnpm add -D"
-alias pi="pnpm install"
-alias pr="pnpm remove"
-alias pd="npx prettier --write . && pnpm run dev"
-alias pb="npx prettier --write . && pnpm run build"
-alias pu="pnpm up --latest && pnpm install && npx prettier --write ."
-
 # git
 alias g="git"
 alias gs="git status"
