@@ -32,6 +32,8 @@ alias gc="git commit -m"
 alias gam="pnpm dlx prettier --write . && git commit --amend"
 alias gp="git push --force"
 alias gpl="git pull && pnpm dlx prettier --write ."
+alias gb="git branch"
+alias gck="git checkout"
 alias fuckit="git add . && pnpm dlx prettier --write . && git commit --amend && git push --force"
 
 # prettier
