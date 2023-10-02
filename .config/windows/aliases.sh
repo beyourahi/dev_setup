@@ -1,5 +1,7 @@
 # aliases (life saver)
 
+# C:\Program Files\Git\etc\profile.d
+
 # basic
 alias e="exit"
 alias t="touch"
