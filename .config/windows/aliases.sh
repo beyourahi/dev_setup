@@ -9,18 +9,29 @@ alias rm="rm -rf"
 alias c="clear"
 alias l="ls -la"
 
+# npm
+alias nx="npx"
+alias ni="npm install"
+alias na="npm install"
+alias nr="npm uninstall"
+alias nd="npm run dev"
+alias nb="npm run build"
+alias ns="npm run start"
+alias nu="ncu && ncu -u && npm install"
+
+
 # pnpm
 alias px="pnpm dlx"
-alias pi="pnpm install && pnpm dlx prettier --write ."
+alias pi="pnpm install"
 alias pa="pnpm add"
-alias pd="pnpm dlx prettier --write . && pnpm run dev"
-alias pb="pnpm dlx prettier --write . && pnpm run build"
+alias pd="pnpm run dev"
+alias pb="pnpm run build"
 alias ps="pnpm run start"
-alias pu="ncu && ncu -u && pnpm install && pnpm dlx prettier --write ."
+alias pu="ncu && ncu -u && pnpm install"
 
 # bun
 alias bx="bunx"
-alias bi="bun install && bunx prettier --write ."
+alias bi="rm bun.lockb && bun install && bunx prettier --write ."
 alias ba="bun add"
 alias br="bun remove"
 alias bu="bun update --latest"
