@@ -34,7 +34,7 @@ alias bx="bunx"
 alias bi="rm bun.lockb && bun install && bunx prettier --write ."
 alias ba="bun add"
 alias br="bun remove"
-alias bu="bun update --latest"
+alias bu="ncu -u && bi && ba next@canary react@rc react-dom@rc && bi && bunx prettier --write . && bb"
 alias bd="bunx prettier --write . && bun run dev"
 alias bb="bunx prettier --write . && bun run build"
 alias bs="bun run start"
@@ -55,3 +55,7 @@ alias fuckit="git add . && bunx prettier --write . && git commit --amend && git 
 # prettier
 alias p="bunx prettier --write ."
 alias pc="bunx prettier --check ."
+
+# wrangler
+alias w="wrangler"
+alias wp="wrangler pages"
