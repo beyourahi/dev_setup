@@ -59,3 +59,4 @@ alias pc="bunx prettier --check ."
 # wrangler
 alias w="wrangler"
 alias wp="wrangler pages"
+alias wpdc="wrangler pages download config"
