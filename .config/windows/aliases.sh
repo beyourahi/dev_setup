@@ -18,7 +18,7 @@ alias nr="npm uninstall"
 alias nd="npm run dev"
 alias nb="npm run build"
 alias ns="npm run start"
-alias nu="ncu && ncu -u -x tailwindcss && npm install && npm run build"
+alias nu="ncu -u -x tailwindcss && npm install && npm run build"
 
 
 # pnpm
@@ -30,7 +30,7 @@ alias pr="pnpm remove"
 alias pd="pnpm run dev"
 alias pb="pnpm run build"
 alias ps="pnpm run start"
-alias pu="ncu && ncu -u -x tailwindcss && pnpm install && pnpm run build"
+alias pu="ncu -u -x tailwindcss && pnpm install && pnpm run build"
 
 # bun
 alias b="bun"
@@ -41,7 +41,7 @@ alias br="bun remove"
 alias bd="bun run dev"
 alias bb="bun run build"
 alias bs="bun run start"
-alias bu="ncu && ncu -u -x tailwindcss && bun install && bun run build"
+alias bu="ncu -u -x tailwindcss && bun install && bun run build"
 
 # git
 alias g="git"
