@@ -58,7 +58,6 @@ alias fuckit="git add . && git commit --amend && git push --force"
 
 # prettier
 alias sexy="bunx prettier --write ."
-alias pc="bunx prettier --check ."
 
 # wrangler
 alias w="wrangler"
