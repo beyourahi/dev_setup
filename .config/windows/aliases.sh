@@ -10,6 +10,7 @@ alias c="clear"
 alias l="ls -la"
 
 # npm
+alias n="npm"
 alias nx="npx"
 alias ni="npm install"
 alias na="npm install"
@@ -17,27 +18,30 @@ alias nr="npm uninstall"
 alias nd="npm run dev"
 alias nb="npm run build"
 alias ns="npm run start"
-alias nu="ncu && ncu -u && npm install"
+alias nu="ncu && ncu -u -x tailwindcss && npm install && npm run build"
 
 
 # pnpm
+alias p="pnpm"
 alias px="pnpm dlx"
 alias pi="pnpm install"
 alias pa="pnpm add"
+alias pr="pnpm remove"
 alias pd="pnpm run dev"
 alias pb="pnpm run build"
 alias ps="pnpm run start"
-alias pu="ncu && ncu -u && pnpm install"
+alias pu="ncu && ncu -u -x tailwindcss && pnpm install && pnpm run build"
 
 # bun
+alias b="bun"
 alias bx="bunx"
-alias bi="rm bun.lockb && bun install && bunx prettier --write ."
+alias bi="bun install"
 alias ba="bun add"
 alias br="bun remove"
-alias bu="ncu -u && bi && bb"
 alias bd="bun run dev"
 alias bb="bun run build"
 alias bs="bun run start"
+alias bu="ncu && ncu -u -x tailwindcss && bun install && bun run build"
 
 # git
 alias g="git"
@@ -47,16 +51,14 @@ alias ga="git add ."
 alias gc="git commit -m"
 alias gam="git commit --amend"
 alias gp="git push --force"
-alias gpl="git pull && bunx prettier --write ."
+alias gpl="git pull"
 alias gb="git branch"
 alias gck="git checkout"
 alias fuckit="git add . && git commit --amend && git push --force"
 
 # prettier
-alias p="bunx prettier --write ."
+alias sexy="bunx prettier --write ."
 alias pc="bunx prettier --check ."
 
 # wrangler
 alias w="wrangler"
-alias wp="wrangler pages"
-alias wpdc="wrangler pages download config"
