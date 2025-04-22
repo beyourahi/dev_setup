@@ -8,6 +8,7 @@ alias t="touch"
 alias rm="rm -rf"
 alias c="clear"
 alias l="ls -la"
+alias cleanup="rm node_modules/ .next/ .wrangler/ .open-next/ .vercel"
 
 # npm
 alias n="npm"
@@ -57,7 +58,9 @@ alias gck="git checkout"
 alias fuckit="git add . && git commit --amend && git push --force"
 
 # prettier
-alias sexy="bunx prettier --write ."
+alias sexy="pnpm dlx prettier --write ."
 
-# wrangler
+# cloudflare
 alias w="wrangler"
+alias cf-deploy="cleanup && pi && pnpm run cf-typegen && sexy && pnpm run deploy"
+
