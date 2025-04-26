@@ -8,7 +8,7 @@ alias t="touch"
 alias rm="rm -rf"
 alias c="clear"
 alias l="ls -la"
-alias cleanup="rm node_modules/ .next/ .wrangler/ .open-next/ .vercel"
+alias cleanup="rm node_modules/ .next/ .wrangler/ .open-next/ .vercel .svelte-kit/ .output/ dist/ build/"
 
 # npm
 alias n="npm"
@@ -63,4 +63,3 @@ alias sexy="pnpm dlx prettier --write ."
 # cloudflare
 alias w="wrangler"
 alias cf-deploy="cleanup && pi && pnpm run cf-typegen && sexy && pnpm run deploy"
-
