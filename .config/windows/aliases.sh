@@ -8,7 +8,7 @@ alias t="touch"
 alias rm="rm -rf"
 alias c="clear"
 alias l="ls -la"
-alias purge="rm node_modules/ .next/ .wrangler/ .open-next/ .vercel .svelte-kit/ .output/ dist/ build/"
+alias purge="rm node_modules/ .astro .next/ .wrangler/ .open-next/ .vercel .svelte-kit/ .output/ dist/ build/ bundled/"
 
 # npm
 alias n="npm"
