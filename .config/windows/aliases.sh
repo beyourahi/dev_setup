@@ -62,4 +62,5 @@ alias sexy="pnpm dlx prettier --write ."
 
 # cloudflare
 alias w="wrangler"
+alias wdr="wrangler deploy --outdir bundled/ --dry-run"
 alias cf-deploy="purge && pi && pnpm run cf-typegen && sexy && pnpm run deploy"
